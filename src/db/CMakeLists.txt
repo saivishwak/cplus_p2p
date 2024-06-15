@@ -1,0 +1,5 @@
+#set(NET_DIR "${CMAKE_BINARY_DIR}/net")
+#find_package(server1 CONFIG )
+include_directories(../net)
+add_library(db Db.cpp)
+target_link_libraries(db net)

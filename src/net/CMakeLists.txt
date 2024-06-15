@@ -1,0 +1,5 @@
+get_filename_component(PROJ_DIR ../../ ABSOLUTE)
+include_directories(../message ../utils ${PROJ_DIR}/vendor/spdlog/include ${PROJ_DIR}/vendor/jsoncpp/include)
+add_library(net P2PServer.cpp P2PServer.h Peer.cpp Peer.h Socket.cpp Socket.h)
+target_include_directories(net PUBLIC .)
+target_link_libraries(net message utils "${PROJ_DIR}/vendor/spdlog/build/libspdlog.a" "${PROJ_DIR}/vendor/jsoncpp/build/lib/libjsoncpp.a")

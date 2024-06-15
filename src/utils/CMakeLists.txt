@@ -1,0 +1,5 @@
+get_filename_component(PROJ_DIR ../../ ABSOLUTE)
+include_directories(${PROJ_DIR}/vendor/jsoncpp/include ${PROJ_DIR}/vendor/spdlog/include)
+add_library(utils STATIC Config.cpp Config.hpp Utils.h)
+target_include_directories(utils PUBLIC .)
+target_link_libraries(utils "${PROJ_DIR}/vendor/jsoncpp/build/lib/libjsoncpp.a" "${PROJ_DIR}/vendor/spdlog/build/libspdlog.a")

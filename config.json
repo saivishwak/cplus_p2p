@@ -1,0 +1,5 @@
+{
+    "seedPorts": [3000],
+    "httpDefaultPort": 4000,
+    "p2pDefaultPort": 3000
+}

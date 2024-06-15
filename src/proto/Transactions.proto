@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package PROTO;
+
+message Transaction{
+  optional string message = 1;
+  optional string type = 2;
+}

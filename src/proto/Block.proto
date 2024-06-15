@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package PROTO;
+
+message Block{
+  string message = 1;
+  string type = 2;
+  repeated int32 peers = 3;
+}

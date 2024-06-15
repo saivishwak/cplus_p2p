@@ -1,0 +1,8 @@
+.vscode
+#ignore build files
+bin
+build
+
+.DS_Store
+
+src/proto/models/*.pb.*
